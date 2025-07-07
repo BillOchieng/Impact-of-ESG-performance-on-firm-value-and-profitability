@@ -1,18 +1,72 @@
-# Impact-of-ESG-performance-on-firm-value-and-profitability
+# Impact of ESG Performance on Firm Value and Profitability
 
-## This project analyzes a large dataset to examine the impact of ESG performance on firm value and profitability, revealing that while Social and Governance factors significantly boost firm value, all three ESG dimensions—Environmental, Social, and Governance—positively contribute to firm profitability, reinforcing ESG as a driver of financial return.
+## 📘 Project Description
+Evaluating how ESG integration affects firm value and profitability across industries using real-world data.
 
-### This project explores how a company’s Environmental, Social, and Governance (ESG) performance influences its financial success. Using real-world data, I conducted a thorough analysis to assess the correlation between ESG scores and key financial metrics such as profitability, return on equity, and market valuation.
+---
 
-## I applied data analytics techniques to:
+## 🎯 Project Objective
+To analyze the relationship between a company’s Environmental, Social, and Governance (ESG) performance and its financial outcomes using empirical data and statistical techniques.
 
-### Analyze ESG performance data alongside financial indicators across multiple firms and industries.
+---
 
-### Identify trends and patterns linking strong ESG practices to higher profitability and improved firm value.
+## 🧪 Methodology Overview
+- Data acquisition from ESG databases and financial statements
+- Cleaning and preprocessing using Python (pandas, numpy)
+- Statistical correlation and regression analysis
+- Visualization of key findings using matplotlib and seaborn
+- Interpretation and business implications
 
-### Visualize insights to support business decision-making and investment strategy.
+---
 
-### Key takeaway: Companies with higher ESG ratings often demonstrate stronger financial performance, reduced risk exposure, and greater long-term value for stakeholders—making ESG not just a compliance effort, but a strategic business lever.
+## 📂 Project Structure
+```
+Impact-of-ESG-performance-on-firm-value-and-profitability/
+├── data/                  # Raw and cleaned ESG + financial data
+│   ├── raw/
+│   └── processed/
+├── notebooks/            # Jupyter notebooks for analysis
+│   ├── 01_data_cleaning.ipynb
+│   └── 02_regression_analysis.ipynb
+├── visuals/              # Charts and graphs for results
+│   └── esg_vs_profitability.png
+├── scripts/              # Python scripts (optional)
+│   └── utils.py
+├── README.md             # Project overview
+├── Refferences.md        # Research citations
+└── requirements.txt      # Python environment setup
+```
 
-Abstract
-In this study, we examine impact of Environment, Social, Governance (ESG) performance on firm value and profitability. Our large dataset gives us the chance to better conceptualize this impact. Our findings suggest that overall ESG combined score is positively and significantly associated with firm value. Individual Social and Governance scores have a positive and significant relationship while Environment score does not have a significant relationship with firm value. On the other hand, ESG combined score, Environment, Social, and Governance scores have positive and significant relationships with firm profitability. These findings suggest that investing in high ESG performance promises financial return for the firm in terms of both value and profitability.
+---
+
+## 📊 Analysis Highlights
+- Measured correlation between ESG scores and ROE, ROA, and firm valuation
+- Regression models tested significance of each ESG pillar (E, S, G)
+- Identified that Social and Governance scores had the strongest association with firm value
+- Found all ESG dimensions contributed positively to firm profitability
+
+---
+
+## 💡 Key Findings
+- High ESG-rated companies tend to have stronger financial performance and lower risk
+- Social and Governance initiatives are particularly impactful on valuation
+- ESG can act as a strategic financial lever, not just a compliance measure
+
+---
+
+## 🧠 Tools and Technologies
+- Python (pandas, numpy, statsmodels, matplotlib, seaborn)
+- Jupyter Notebooks
+- ESG and financial datasets (public sources or proprietary)
+
+---
+
+## 📚 References
+- Khan, M., Serafeim, G., & Yoon, A. (2016). *Corporate Sustainability: First Evidence on Materiality*. The Accounting Review.
+- Eccles, R. G., Ioannou, I., & Serafeim, G. (2014). *The Impact of Corporate Sustainability on Organizational Processes and Performance*. Management Science.
+- MSCI ESG Ratings Methodology. https://www.msci.com/our-solutions/esg-investing/esg-ratings
+
+---
+
+## 📬 Contact
+Created by [Bill Ochieng](https://github.com/BillOchieng). Let’s connect on [LinkedIn](https://linkedin.com/in/) or discuss improvements via GitHub Issues.
