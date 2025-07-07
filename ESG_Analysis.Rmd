@@ -1,1 +1,56 @@
+---
+title: "ESG Analysis in R"
+author: "Bill Ochieng"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(broom)
+library(tidyr)
+library(car)
+```
+
+## Load ESG and Financial Data
+
+```{r load-data}
+# Read data
+esg_data <- read_csv("../data/processed/esg_financial_data.csv")
+head(esg_data)
+```
+
+## Summary Statistics
+
+```{r summary}
+esg_data %>%
+  summarise(across(where(is.numeric), list(mean = mean, sd = sd), na.rm = TRUE))
+```
+
+## Regression Analysis: ESG vs Profitability
+
+```{r regression}
+model <- lm(ROE ~ ESG_Score + Environment + Social + Governance, data = esg_data)
+summary(model)
+tidy(model)
+```
+
+## Visualizations
+
+```{r visualizations}
+ggplot(esg_data, aes(x = ESG_Score, y = ROE)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  labs(title = "ESG Score vs Return on Equity", x = "ESG Score", y = "ROE")
+```
+
+## Interpretation
+
+```{r diagnostic}
+# Check for multicollinearity
+vif(model)
+```
+
+Interpret the results and export outputs if needed.
 
