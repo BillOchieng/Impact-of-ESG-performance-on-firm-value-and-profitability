@@ -54,3 +54,32 @@ vif(model)
 
 Interpret the results and export outputs if needed.
 
+---
+title: "ESG Analysis in R"
+author: "Bill Ochieng"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 2
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+# Ensure the working directory is your project root
+if (!require(here)) install.packages("here")
+library(here)
+
+# Load all required packages
+pkgs <- c("readr","dplyr","ggplot2","broom","tidyr","car")
+installed <- rownames(installed.packages())
+for (p in pkgs) if (!p %in% installed) install.packages(p)
+lapply(pkgs, library, character.only = TRUE)
+
+# Options
+knitr::opts_chunk$set(
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE
+)
+
+
